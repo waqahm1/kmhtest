@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Kent Muslim Hands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #004aad;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 50px;
+        margin-right: 1rem;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #004aad;
+      }
+
+      nav a {
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+        transition: background 0.3s;
+        flex: 1 1 auto;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background-color: #003380;
+      }
+
+      .contact-section {
+        padding: 3rem 2rem;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #004aad;
+      }
+
+      .contact-section p {
+        margin-bottom: 2rem;
+      }
+
+      .email-button {
+        display: inline-block;
+        background-color: #7ed957;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+
+      .email-button:hover {
+        background-color: #65b945;
+      }
+
+      footer {
+        background-color: #004aad;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+      }
+
+      @media (max-width: 600px) {
+        .logo h1 {
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/Kentmuslimhands.jpg" alt="Kent Muslim Hands" />
+        <h1>Kent Muslim Hands</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="test.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, ideas, or would like to collaborate, please get in touch with us.</p>
+      <a href="mailto:info@kentmuslimhands.org.uk?subject=Contact Us Request&body=Dear Kent Muslim Hands," class="email-button">Email Us</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        alert("Thank you for reaching out! We'll get back to you shortly.");
+        e.target.reset();
+      }
+    </script>
+  </body>
+</html>
