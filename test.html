@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kent Muslim Hands</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #004aad;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 50px;
+        width: auto;
+        margin-right: 1rem;
+      }
+
+      .logo h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #004aad;
+      }
+
+      nav a {
+        color: white;
+        padding: 1rem;
+        text-decoration: none;
+        transition: background 0.3s;
+        flex: 1 1 auto;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background-color: #003380;
+      }
+
+      .hero {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #e9fbe5;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #004aad;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .section {
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #004aad;
+      }
+
+      .donate-btn {
+        background-color: #7ed957;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+
+      .donate-btn:hover {
+        background-color: #65b945;
+      }
+
+      footer {
+        background-color: #004aad;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p,
+        .section p {
+          font-size: 1rem;
+        }
+
+        nav {
+          flex-direction: column;
+        }
+
+        nav a {
+          border-top: 1px solid #003380;
+        }
+
+        .section {
+          padding: 2rem 1rem;
+        }
+
+        .logo h1 {
+          font-size: 1.3rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero h1 {
+          font-size: 1.5rem;
+        }
+
+        .donate-btn {
+          width: 100%;
+        }
+
+        .logo img {
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/Kentmuslimhands.jpg" alt="Kent Muslim Hands" />
+        <h1>Kent Muslim Hands</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="test.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <section class="section">
+      <h2>Welcome to Kent Muslim Hands</h2>
+      <p>We believe in creating a better world through sustainable action and compassion. Explore our website to learn more.</p>
+    </section>
+    <section class="hero">
+      <h1>Support Our Mission</h1>
+      <p>Kent Muslim Hands is dedicated to improving lives through education, healthcare, and community development programs across the globe.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Kent Muslim Hands. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleDonate() {
+        window.location.href = "donate.html";
+      }
+    </script>
+  </body>
+</html>
