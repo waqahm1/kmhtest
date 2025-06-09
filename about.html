@@ -157,6 +157,69 @@
           height: 40px;
         }
       }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem auto;
+        max-width: 1000px;
+      }
+
+      .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-left: 5px solid #004aad;
+        padding: 1rem;
+        width: 280px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        text-align: left;
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+      }
+
+      .feature-section {
+        background-color: #ffffff;
+        border-left: 5px solid #004aad;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        padding: 2rem;
+        margin: 2rem auto;
+        max-width: 900px;
+        border-radius: 8px;
+        text-align: left;
+      }
+
+      .feature-section h2 {
+        color: #004aad;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+
+      .feature-section p {
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .email-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #004aad; /* Change to your theme color */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .email-button:hover {
+        background-color: #0056b3;
+      }
     </style>
   </head>
 
@@ -180,9 +243,93 @@
       <p>Kent Muslim Hands is dedicated to improving lives through education, healthcare, and community development programs across the globe.</p>
     </section>
 
+    <!-- <section class="section">
+      <h2>Welcome to Kent Muslim Hands</h2>
+      <p>We believe in creating a better world through sustainable action and compassion. Explore our website to learn more.</p>
+    </section> -->
+
     <section class="section">
       <h2>Welcome to Kent Muslim Hands</h2>
       <p>We believe in creating a better world through sustainable action and compassion. Explore our website to learn more.</p>
+
+      <!-- <h2>Who We Are</h2>
+      <p>Kent Muslim Hands is a grassroots charity founded in 2025 by members of the local Muslim community in Gravesend. Our mission is to build bridges across communities in Kent through meaningful acts of service and compassion.</p>
+      <p>While our roots are within the Muslim community, our vision extends to everyone. We believe that supporting one another – regardless of background, faith, or circumstance – is the key to a stronger, more united society.</p> -->
+
+      <div class="feature-section">
+        <h2>Who We Are</h2>
+        <p>Kent Muslim Hands is a grassroots charity founded in 2025 by members of the local Muslim community in Gravesend. Our mission is to build bridges across communities in Kent through meaningful acts of service and compassion.</p>
+        <p>While our roots are within the Muslim community, our vision extends to everyone. We believe that supporting one another – regardless of background, faith, or circumstance – is the key to a stronger, more united society.</p>
+      </div>
+
+      <!-- <h2>Our Story</h2>
+      <p>
+        Kent Muslim Hands was founded in 2025 by a group of local Muslims in Gravesend who share a strong commitment to community service. The founding members – Bilal Farooq, Shiyamin Mohamed, Adnan Khan, Imran Tahir, Omar Ilyas, and Waqar Ahmad –
+        each bring with them a background in charitable work and community engagement.
+      </p>
+      <p>
+        The idea for the charity grew from a shared belief that the values of compassion, service, and unity should extend beyond the walls of any one place of worship. Led by this vision, the founders came together to create an organisation that
+        could respond to local needs and build stronger connections across communities.
+      </p> -->
+      <div class="feature-section">
+        <h2>Our Story</h2>
+        <p>
+          Kent Muslim Hands was founded in 2025 by a group of local Muslims in Gravesend who share a strong commitment to community service. The founding members – Bilal Farooq, Shiyamin Mohamed, Adnan Khan, Imran Tahir, Omar Ilyas, and Waqar Ahmad –
+          each bring with them a background in charitable work and community engagement.
+        </p>
+        <p>
+          The idea for the charity grew from a shared belief that the values of compassion, service, and unity should extend beyond the walls of any one place of worship. Led by this vision, the founders came together to create an organisation that
+          could respond to local needs and build stronger connections across communities.
+        </p>
+      </div>
+
+      <!-- <h2>Why We Do What We Do</h2>
+      <p>
+        Charity is a fundamental part of Islam. Our faith teaches us to care for those in need, to act with compassion, and to serve our communities with sincerity and humility. Through our work, we aim to embody these values and share the true
+        spirit of Islam – rooted in kindness, generosity, and responsibility to others.
+      </p>
+      <p>
+        Kent is a wonderfully diverse place, and we’re committed to helping that diversity flourish. Through charitable initiatives and other outreach, we aim to support those in need in our local community and in the process foster real community
+        cohesion.
+      </p> -->
+
+      <div class="feature-section">
+        <h2>Why We Do What We Do</h2>
+        <p>
+          Charity is a fundamental part of Islam. Our faith teaches us to care for those in need, to act with compassion, and to serve our communities with sincerity and humility. Through our work, we aim to embody these values and share the true
+          spirit of Islam – rooted in kindness, generosity, and responsibility to others.
+        </p>
+        <p>
+          Kent is a wonderfully diverse place, and we’re committed to helping that diversity flourish. Through charitable initiatives and other outreach, we aim to support those in need in our local community and in the process foster real community
+          cohesion.
+        </p>
+      </div>
+
+      <h2>What We've Done So Far</h2>
+      <p>Since our launch, Kent Muslim Hands has been involved in a number of initiatives that reflect our core values:</p>
+      <div class="cards">
+        <div class="card">Distributed food parcels to those in need during Ramadan</div>
+        <div class="card">Organised regular donations to local food banks</div>
+        <div class="card">Hosted community Iftars and participated in interfaith events</div>
+        <div class="card">Supported wider community celebrations, including the annual Eid Mela</div>
+      </div>
+      <p>These early efforts are just the beginning of what we hope to continue and grow.</p>
+
+      <h2>What’s Next?</h2>
+      <p>We may be new, but we have big plans. Our future goals include:</p>
+      <div class="cards">
+        <div class="card">Expanding food drives to meet growing local needs</div>
+        <div class="card">Promoting interfaith understanding through new events and dialogue</div>
+        <div class="card">Launching a mentorship programme to support and inspire young people</div>
+        <div class="card">Staying open to new ideas and areas of need as they arise</div>
+      </div>
+      <p>We’re always keen to hear from others in the community. If you know of a way we can help, or if you’d like to work with us, we’d love to hear from you.</p>
+
+      <!-- <h2>Get Involved</h2> -->
+      <h2></h2>
+      <p>We’re always looking for volunteers who share our values and want to make a difference. Whether you can give your time, your ideas, or your energy – we’d love to welcome you.</p>
+      <h2></h2>
+      <a href="mailto:info@kentmuslimhands.org.uk?subject=Get Involved Request&body=Dear Kent Muslim Hands," class="email-button">Get Involved</a>
     </section>
 
     <footer>
