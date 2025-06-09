@@ -132,6 +132,28 @@
           font-size: 1.5rem;
         }
       }
+
+      .collapsible {
+        background-color: #004aad;
+        color: white;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: left;
+      }
+
+      .collapsible:hover {
+        background-color: #003380;
+      }
+
+      .collapsible-content {
+        display: none;
+        margin-top: 1rem;
+      }
     </style>
   </head>
 
@@ -149,7 +171,7 @@
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
-
+    <!-- 
     <section class="projects-section">
       <h2>Our Projects</h2>
       <div class="projects-container">
@@ -171,10 +193,89 @@
           <p>We provide sports to the community.</p>
         </div>
       </div>
+    </section> -->
+
+    <section class="projects-section">
+      <h2>Current Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="images/eidmela.jpg" alt="Eid Mela" />
+          <h3>Eid Mela</h3>
+          <p>We participated in and supported the annual Eid Mela, celebrating our diverse community.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="images/sportsposter.JPG" alt="Sports" />
+          <h3>Sports Programme</h3>
+          <p>We’re running weekly sports sessions for youth to promote health, unity and discipline.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>Future Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="" alt="Mentorship" />
+          <h3>Mentorship Programme</h3>
+          <p>Aimed at empowering young people with guidance from experienced community members.</p>
+        </div>
+
+        <!-- <div class="project-card">
+          <img src="images/placeholder.jpg" alt="Interfaith Events" />
+          <h3>Interfaith Events</h3>
+          <p>Planned gatherings to promote mutual understanding and collaboration between faith groups.</p>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2>
+        <button class="collapsible">Past Projects Archive</button>
+      </h2>
+      <div class="collapsible-content">
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="images/iftar.JPG" alt="Iftar" />
+            <h3>Community Iftar</h3>
+            <p>We hosted a community Iftar during Ramadan to bring people together from all walks of life.</p>
+          </div>
+
+          <!-- <div class="project-card">
+            <img src="images/placeholder.jpg" alt="Food Bank Donations" />
+            <h3>Food Bank Donations</h3>
+            <p>We regularly donated non-perishable food items to local food banks during peak needs.</p>
+          </div> -->
+
+          <div class="project-card">
+            <img src="images/ramadanposter.JPG" alt="Ramadan Food Packages" />
+            <h3>Ramadan Food Packages</h3>
+            <p>We're distributing essential Ramadan packages to families in need throughout Kent.</p>
+          </div>
+
+          <!-- <div class="project-card">
+            <img src="images/placeholder.jpg" alt="Eid Mela" />
+            <h3>Eid Mela</h3>
+            <p>We participated in and supported the annual Eid Mela, celebrating our diverse community.</p>
+          </div> -->
+        </div>
+      </div>
     </section>
 
     <footer>
       <p>&copy; 2025 Kent Muslim Hands. All rights reserved.</p>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const collapsible = document.querySelector(".collapsible");
+        const content = document.querySelector(".collapsible-content");
+
+        collapsible.addEventListener("click", function () {
+          this.classList.toggle("active");
+          content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+      });
+    </script>
   </body>
 </html>
