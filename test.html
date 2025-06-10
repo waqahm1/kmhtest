@@ -84,16 +84,44 @@
 
       .section {
         padding: 3rem 2rem;
-        text-align: center;
       }
 
       .section h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
         color: #004aad;
+        text-align: center;
       }
 
-      .donate-btn {
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: left;
+      }
+
+      .content img {
+        width: 300px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .content-text {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      .content-text p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+      }
+
+      .donate-btn,
+      .read-more-btn {
         background-color: #7ed957;
         color: white;
         padding: 0.75rem 1.5rem;
@@ -101,10 +129,12 @@
         border-radius: 5px;
         font-size: 1rem;
         cursor: pointer;
-        margin-top: 1rem;
+        text-decoration: none;
+        display: inline-block;
       }
 
-      .donate-btn:hover {
+      .donate-btn:hover,
+      .read-more-btn:hover {
         background-color: #65b945;
       }
 
@@ -116,7 +146,6 @@
         margin-top: 2rem;
       }
 
-      /* Responsive Styles */
       @media (max-width: 768px) {
         .hero h1 {
           font-size: 2rem;
@@ -127,20 +156,17 @@
           font-size: 1rem;
         }
 
-        nav {
-          flex-direction: column;
-        }
-
-        nav a {
-          border-top: 1px solid #003380;
-        }
-
-        .section {
-          padding: 2rem 1rem;
-        }
-
         .logo h1 {
-          font-size: 1.3rem;
+          font-size: 1.5rem;
+        }
+
+        .content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .content-text {
+          text-align: center;
         }
       }
 
@@ -149,7 +175,8 @@
           font-size: 1.5rem;
         }
 
-        .donate-btn {
+        .donate-btn,
+        .read-more-btn {
           width: 100%;
         }
 
@@ -159,7 +186,6 @@
       }
     </style>
   </head>
-
   <body>
     <header>
       <div class="logo">
@@ -174,13 +200,47 @@
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
+
     <section class="section">
       <h2>Welcome to Kent Muslim Hands</h2>
-      <p>We believe in creating a better world through sustainable action and compassion. Explore our website to learn more.</p>
     </section>
+
     <section class="hero">
       <h1>Support Our Mission</h1>
-      <p>Kent Muslim Hands is dedicated to improving lives through education, healthcare, and community development programs across the globe.</p>
+      <p>Our mission is to build bridges across communities in Kent through meaningful acts of service and compassion.</p>
+    </section>
+
+    <section class="section">
+      <h2>About Us</h2>
+      <div class="content">
+        <img src="images/Kentmuslimhands.jpg" alt="About Kent Muslim Hands" />
+        <div class="content-text">
+          <p>Our mission is to build bridges across communities in Kent through meaningful acts of service and compassion.</p>
+          <a href="about.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background-color: #e9fbe5">
+      <h2>Our Projects</h2>
+      <div class="content">
+        <img src="images/eidmela.jpg" alt="Community Projects" />
+        <div class="content-text">
+          <p>From food distribution to community education, our projects are focused on uplifting the vulnerable and bridging cultural gaps.</p>
+          <a href="projects.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact Us</h2>
+      <div class="content">
+        <img src="images/Kentmuslimhands.jpg" alt="Contact Kent Muslim Hands" />
+        <div class="content-text">
+          <p>We value communication and welcome any questions, feedback, or interest in collaboration. Reach out to us anytime.</p>
+          <a href="contact.html" class="read-more-btn">Read More</a>
+        </div>
+      </div>
     </section>
 
     <footer>
